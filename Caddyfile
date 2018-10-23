@@ -1,0 +1,15 @@
+*:80
+ext .html
+gzip 
+minify
+
+header / {
+    Strict-Transport-Security "max-age=31556926; includeSubDomains; preload"
+    X-XSS-Protection "1; mode=block"
+    X-Content-Type-Options "nosniff"
+    X-Frame-Options "SAMEORIGIN"
+    Referrer-Policy "no-referrer-when-downgrade"
+    X-UA-Compatible "IE=Edge"
+    Server "mazzotta-server"
+}
+
