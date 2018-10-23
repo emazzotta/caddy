@@ -4,3 +4,12 @@
 
 A simple Caddy server Docker container
 
+## Run
+
+```bash
+# Default config
+docker run -p 80:80 emazzotta/docker-caddy
+
+# Custom Caddyfile
+docker run -v $PWD/Caddyfile:/caddy/Caddyfile -p 80:80 emazzotta/docker-caddy
+```
