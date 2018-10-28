@@ -8,8 +8,8 @@ A simple Caddy server Docker container
 
 ```bash
 # Default config
-docker run -p 80:80 emazzotta/docker-caddy
+docker run -p 80:80 emazzotta/caddy
 
 # Custom Caddyfile
-docker run -v $PWD/Caddyfile:/caddy/Caddyfile -p 80:80 emazzotta/docker-caddy
+docker run -v $PWD/Caddyfile:/caddy/Caddyfile -p 80:80 emazzotta/caddy
 ```
