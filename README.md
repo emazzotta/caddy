@@ -11,5 +11,5 @@ A simple Caddy server Docker container
 docker run --rm -p 80:80 emazzotta/caddy
 
 # Custom Caddyfile
-docker run --rm -v $PWD/Caddyfile:/caddy/Caddyfile -p 80:80 emazzotta/caddy
+docker run --rm -v $PWD/Caddyfile:/etc/Caddyfile -p 80:80 emazzotta/caddy
 ```

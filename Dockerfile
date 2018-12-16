@@ -1,9 +1,10 @@
 FROM alpine:3.8
 
-WORKDIR /caddy
+WORKDIR /etc
+RUN mkdir /etc/caddy
 
-COPY caddy /caddy
-COPY Caddyfile /caddy
-COPY index.html /caddy
+COPY caddy .
+COPY Caddyfile .
+COPY index.html .
 
-CMD ["/caddy/caddy", "-conf", "/caddy/Caddyfile"]
+CMD ["/etc/caddy", "-conf", "/etc/Caddyfile"]
