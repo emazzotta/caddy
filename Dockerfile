@@ -1,6 +1,5 @@
-FROM alpine:3.6
+FROM alpine:3.8
 
-RUN mkdir /caddy
 WORKDIR /caddy
 
 COPY caddy /caddy
