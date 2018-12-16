@@ -1,7 +1,6 @@
 FROM alpine:3.8
 
 WORKDIR /etc
-RUN mkdir /etc/caddy
 
 COPY caddy .
 COPY Caddyfile .
